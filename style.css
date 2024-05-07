@@ -99,7 +99,6 @@ Banner
 }
 .banner {
     max-width: 766px;
-    /* text-align: center; */
     margin: 0 auto;
 }
 .banner-title {
@@ -115,7 +114,6 @@ Banner
 .button-primary_banner {
     padding: 16px 62px;
 }
-f
 /* 
 Features 
 */
@@ -124,7 +122,7 @@ Features
     max-width: 535px;
     padding-bottom: 90px;
 }
-.features-top-wrapper {
+.features-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 72px;
@@ -151,11 +149,15 @@ line-height: 25px;
     position: relative;
     padding-bottom: 340px;
 }
+.video__img {
+    border-radius: 45px;
+    box-shadow: 0 8px 63px 0 rgba(0, 0, 0, 0.15);
+}
 .video-button {
     position: absolute;
     max-width: 187px;
     max-height: 187px;
-    top: 36%;
+    top: 23%;
     right: 43%;
 }
 /* 
@@ -239,4 +241,36 @@ Newsletter
     width: 172px;
     height: 58px;
 }
- 
+/* 
+Partners 
+*/
+#partners-section {
+    padding-bottom: 80px;
+}
+.partners__text {
+    display: inline-block;
+    max-width: 530px;
+    padding-bottom: 90px;
+} 
+.partners-card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.partners-card {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    border: 1px solid #d8d8d8;
+}
+.card__inner {
+    margin: auto;
+}
+.partners-card__text {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    padding-bottom: 15px;
+}
