@@ -8,8 +8,10 @@
 body {
     color: #374754; 
     font: 400 28px "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 40px;
     letter-spacing: 0.2px;
     background-color: #fff;
+    text-align: center;
 }
 a {
     color: inherit;
@@ -42,6 +44,12 @@ button {
     margin: 0 auto;
     padding: 0 10px;
 }
+.section-title {
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+color: #252b42;
+}
 /* 
 Banner 
 */
@@ -50,7 +58,6 @@ Banner
     background: url(img/banner-bg.png) no-repeat top;
     background-size: contain;
     color: #fff;
-    /* height: 1042px; */
 }
 .header {
     display: flex;
@@ -90,7 +97,7 @@ Banner
 }
 .banner {
     max-width: 766px;
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto;
 }
 .banner-title {
@@ -105,5 +112,46 @@ Banner
 }
 .button-primary_banner {
     padding: 16px 62px;
+}
+.features__text {
+    max-width: 535px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+.features-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+    max-width: 869px;
+    margin: 0 auto;
+    padding-bottom: 132px;
+}
+.features-card {
+    max-width: 231px;
+}
+.features-card__icon {
+    padding-bottom: 20px;
+}
+.features-card__title {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    padding-bottom: 20px;
+}
+.features-card__text {
+font-size: 18px;
+line-height: 25px;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 340px;
+}
+.video-button {
+    position: absolute;
+    max-width: 187px;
+    max-height: 187px;
+    top: 36%;
+    right: 43%;
 }
  
