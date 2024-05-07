@@ -37,6 +37,7 @@ button {
     font-size: 20px;
     text-transform: capitalize;
     border-radius: 35px;
+    color: #fff;
     background-color: #2091F9;
 }
 .container {
@@ -45,10 +46,11 @@ button {
     padding: 0 10px;
 }
 .section-title {
-font-weight: 400;
-font-size: 48px;
-line-height: 55px;
-color: #252b42;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    color: #252b42;
+    padding-bottom: 27px;
 }
 /* 
 Banner 
@@ -113,12 +115,16 @@ Banner
 .button-primary_banner {
     padding: 16px 62px;
 }
+f
+/* 
+Features 
+*/
 .features__text {
+    display: inline-block;
     max-width: 535px;
-    margin: 0 auto;
     padding-bottom: 90px;
 }
-.features-wrapper {
+.features-top-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 72px;
@@ -133,8 +139,6 @@ Banner
     padding-bottom: 20px;
 }
 .features-card__title {
-    font-size: 20px;
-    line-height: 28px;
     letter-spacing: 0.1px;
     color: #252b42;
     padding-bottom: 20px;
@@ -153,5 +157,86 @@ line-height: 25px;
     max-height: 187px;
     top: 36%;
     right: 43%;
+}
+/* 
+Fastest 
+*/
+.fastest-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 68px;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 442px;
+}
+.fastest {
+    max-width: 530px;
+}
+.section-title_fastest {
+    max-width: 335px;
+}
+.fastests__text {
+    padding-bottom: 70px;
+}
+.button-primary_fastest {
+    padding: 16px 60px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+}
+.fastest-img {
+    max-width: 625px;
+    max-height: 350px;
+}
+/* 
+Newsletter 
+*/
+.newsletter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    padding-bottom: 182px;
+    padding-left: 54px;
+}
+.newsletter-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+}
+.newsletter-subtitle_top {
+    padding-bottom: 17px;
+}
+.section-title_newsletter {
+    max-width: 325px;
+    padding-bottom: 35px;
+}
+.newsletter__text {
+    font-size: 18px;
+    line-height: 25px;
+}
+.newsletter-form__input {
+    width: 273px;
+    height: 54px;
+    padding: 19px 39px;
+    background: #f4f4f4;
+    border: 1px solid #e8e8e8;
+    border-radius: 39px;
+    margin-top: 36px;
+}
+.newsletter-form__input::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #18171d;
+}
+.newsletter-form__button {
+    display: inline-block;
+    width: 172px;
+    height: 58px;
 }
  
