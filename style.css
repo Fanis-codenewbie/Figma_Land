@@ -94,7 +94,7 @@ Banner
     width: 41px;
     height: 41px;
 }
-#banner-section {
+.banner-section {
     padding: 165px 0 358px;     
 }
 .banner {
@@ -137,13 +137,17 @@ Features
     padding-bottom: 20px;
 }
 .features-card__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
     letter-spacing: 0.1px;
     color: #252b42;
     padding-bottom: 20px;
 }
 .features-card__text {
-font-size: 18px;
-line-height: 25px;
+    font-size: 18px;
+    line-height: 25px;
 }
 .video-wrapper {
     position: relative;
@@ -204,6 +208,8 @@ Newsletter
     padding-left: 54px;
 }
 .newsletter-subtitle {
+    display: block;
+    font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.1px;
@@ -217,6 +223,7 @@ Newsletter
     padding-bottom: 35px;
 }
 .newsletter__text {
+    display: inline-block;
     font-size: 18px;
     line-height: 25px;
 }
@@ -244,8 +251,8 @@ Newsletter
 /* 
 Partners 
 */
-#partners-section {
-    padding-bottom: 80px;
+.partners-section {
+    padding-bottom: 190px;
 }
 .partners__text {
     display: inline-block;
@@ -273,4 +280,154 @@ Partners
     line-height: 23px;
     letter-spacing: 0.1px;
     padding-bottom: 15px;
+}
+/* 
+Testimonials 
+*/
+.testimonials-section {
+    padding-bottom: 100px;
+}
+.testimonials-logo {
+    padding-top: 63px;
+    padding-bottom: 60px;
+}
+.testimonials__text {
+    display: block;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.testimonials-card {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    padding-bottom: 80px;
+}
+.testimonials-card__img {
+    width: 50px;
+    height: 50px;
+}
+.testimonials-card__text {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    max-width: 125px;
+    text-align: left;
+}
+/* 
+Pricing 
+*/
+.pricing-section {
+    background-color: #252b42;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+.section-title_pricing {
+    color: #fff;
+}
+.pricing__text {
+    display: inline-block;
+    width: 530px;
+    color: #fff;
+    padding-bottom: 90px;
+}
+.pricing-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.pricing-card {
+    width: 335px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.pricing-card_center {
+    padding: 83px 40px;
+    background: #2090f8;
+    color: #fff;
+}
+.pricing-card__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+.pricing-card__title_center {
+    color: #fff;
+}
+.pricing-card__text {
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    padding-bottom: 18px;
+}
+.price-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+.price {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 74px;
+    color: #252b42;
+}
+.price_center {
+    color: #fff;
+}
+.price-inner-wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price__text_bold {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #252b42;
+}
+.price__text_bold_center {
+    color: #fff;
+}
+.price__text {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+.pricing-feature-wrapper {
+    padding-bottom: 40px;
+}
+.pricing-feature__text {
+    font-size: 15px;
+    line-height: 28px;
+    color: #252b42;
+    padding-bottom: 20px;
+}
+.pricing-feature__text_center {
+    color: #fff;
+}
+.pricing-feature__text:last-child {
+    padding-bottom: 0;
+}
+.button-primary_pricing {
+    padding: 18px 75px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.button-primary_pricing_center {
+    color: #2090f8;
+    background-color: #fff;
 }
