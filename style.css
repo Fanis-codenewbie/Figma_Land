@@ -26,7 +26,7 @@ img {
     max-height: 100%;
 }
 button {
-    display: block;
+    display: inline-block;
     border: none;
     font: inherit;
     background-color: transparent;
@@ -35,6 +35,7 @@ button {
 }
 .button-primary {
     font-size: 20px;
+    line-height: 1;
     text-transform: capitalize;
     border-radius: 35px;
     color: #fff;
@@ -245,8 +246,7 @@ Newsletter
 }
 .newsletter-form__button {
     display: inline-block;
-    width: 172px;
-    height: 58px;
+    padding: 19px 38px;
 }
 /* 
 Partners 
@@ -430,4 +430,119 @@ Pricing
 .button-primary_pricing_center {
     color: #2090f8;
     background-color: #fff;
+}
+/* 
+Contact Us 
+*/
+.contact-section {
+    padding-top: 213px;
+    padding-bottom: 102px;
+}
+.contact-section__title {
+    padding-bottom: 27px;
+}
+.contact-section__text {
+    display: inline-block;
+    max-width: 550px;
+    padding-bottom: 60px;
+}
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.contact-form-wrapper {
+    max-width: 453px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 52px 50px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+
+
+}
+.contact-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #252b42;
+}
+.contact-form__input {
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #18171d;
+    padding: 19px 20px;
+    background: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    border-radius: 39px;
+}
+.contact-form__input::placeholder {
+    color: #18171d;
+  }
+  .contact-form__note {
+    width: 353px;
+    height: 193px;
+    padding: 23px 20px;
+    background: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #18171d;
+  }
+  .contact-form__note::placeholder {
+    color: #18171d;
+  }
+  .button-primary_contact {
+    padding: 18px 38px;
+    line-height: 20px;
+    width: 145px;
+  }
+  .contact-info-wrapper {
+    padding-top: 28px;
+  }
+.contact-info-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info__icon {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.contact-info__text {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+.contact-info_poi {
+    flex-basis: 35%;
+}
+.contact-info_phone {
+    flex-basis: 15%;
+}
+.contact-info_letter {
+    flex-basis: 25%;
+}
+.contact-map {
+    width: 516px;
+    height: 323px;
+    margin: 70px auto;
+    border: 1px solid #dddddd;
+}
+.contact-social {
+    text-align: start;
 }
