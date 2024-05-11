@@ -8,7 +8,7 @@
 body {
     color: #374754; 
     font: 400 28px "Roboto", Arial, Helvetica, sans-serif;
-    line-height: 40px;
+    line-height: 1.4;
     letter-spacing: 0.2px;
     background-color: #fff;
     text-align: center;
@@ -27,14 +27,14 @@ img {
 }
 textarea {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1;
     letter-spacing: 0.1px;
     text-align: left;
     color: #18171d;
     resize: none;
 }
 button {
-    display: inline-block;
+    display: block;
     border: none;
     font: inherit;
     background-color: transparent;
@@ -42,6 +42,7 @@ button {
     cursor: pointer;
 }
 .button-primary {
+    display: inline-block;
     font-size: 20px;
     line-height: 1;
     text-transform: capitalize;
@@ -57,17 +58,16 @@ button {
 .section-title {
     font-weight: 400;
     font-size: 48px;
-    line-height: 55px;
+    line-height: 1.1;
     color: #252b42;
-    padding-bottom: 27px;
 }
 /* 
 Banner 
 */
 .banner-wrapper {
     padding-top: 39px;
-    background: url(img/banner-bg.png) no-repeat top;
-    background-size: contain;
+    background: url(img/banner-bg.png) no-repeat bottom;
+    background-size: cover;
     color: #fff;
 }
 .header {
@@ -104,28 +104,36 @@ Banner
     height: 41px;
 }
 .banner-section {
-    padding: 165px 0 358px;     
+    padding-top: 165px;     
 }
 .banner {
     max-width: 766px;
     margin: 0 auto;
 }
-.banner-title {
+.banner-section__title {
+    font-weight: 700;
     font-size: 74px;
-    line-height: 84px;  
-    padding-bottom: 27px;
+    line-height: 1.1;  
+    color: #fff;
 }
 .banner__text {
     font-size: 28px;
-    line-height: 40px;
+    line-height: 1.4;
     padding-bottom: 80px;
 }
 .button-primary_banner {
     padding: 16px 62px;
+    margin-bottom: 243px;
 }
 /* 
 Features 
 */
+.features-section {
+    padding-top: 126px;
+}
+.features-section__title {
+    padding-bottom: 27px;
+}
 .features__text {
     display: inline-block;
     max-width: 535px;
@@ -156,7 +164,7 @@ Features
 }
 .features-card__text {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.4;
 }
 .video-wrapper {
     position: relative;
@@ -189,6 +197,7 @@ Fastest
 }
 .section-title_fastest {
     max-width: 335px;
+    padding-bottom: 27px;
 }
 .fastests__text {
     padding-bottom: 70px;
@@ -197,12 +206,14 @@ Fastest
     padding: 16px 60px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
 }
-.fastest-img {
-    max-width: 625px;
-    max-height: 350px;
+.fastest__img {
+    width: 625px;
+    height: 350px;
+    background: url(img/fastest.png) no-repeat;
+    background-size: contain;
 }
 /* 
 Newsletter 
@@ -216,11 +227,17 @@ Newsletter
     padding-bottom: 182px;
     padding-left: 54px;
 }
+.newsletter__img {
+    width: 677px;
+    height: 514px;
+    background: url(img/newsletter.png) no-repeat;
+    background-size: contain;
+}
 .newsletter-subtitle {
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     color: #252b42;
 }
@@ -234,7 +251,7 @@ Newsletter
 .newsletter__text {
     display: inline-block;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.4;
 }
 .newsletter-form__input {
     width: 273px;
@@ -247,7 +264,7 @@ Newsletter
 }
 .newsletter-form__input::placeholder {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.1px;
     text-align: left;
     color: #18171d;
@@ -261,6 +278,9 @@ Partners
 */
 .partners-section {
     padding-bottom: 190px;
+}
+.partners-section__title {
+    padding-bottom: 27px;
 }
 .partners__text {
     display: inline-block;
@@ -285,7 +305,7 @@ Partners
 }
 .partners-card__text {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     padding-bottom: 15px;
 }
@@ -295,8 +315,10 @@ Testimonials
 .testimonials-section {
     padding-bottom: 100px;
 }
+.testimonials-section__title {
+    padding-bottom: 90px;
+}
 .testimonials-logo {
-    padding-top: 63px;
     padding-bottom: 60px;
 }
 .testimonials__text {
@@ -317,7 +339,7 @@ Testimonials
 }
 .testimonials-card__text {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     max-width: 125px;
     text-align: left;
@@ -332,6 +354,7 @@ Pricing
 }
 .section-title_pricing {
     color: #fff;
+    padding-bottom: 27px;
 }
 .pricing__text {
     display: inline-block;
@@ -341,9 +364,11 @@ Pricing
 }
 .pricing-card-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1105px;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
+    margin: 0 auto;
 }
 .pricing-card {
     width: 335px;
@@ -356,13 +381,13 @@ Pricing
 .pricing-card_center {
     padding: 83px 40px;
     background: #2090f8;
-    color: #fff;
+    /* color: #fff; */
 }
 .pricing-card__title {
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     color: #252b42;
     text-transform: uppercase;
@@ -375,9 +400,12 @@ Pricing
     display: inline-block;
     width: 150px;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     padding-bottom: 18px;
+}
+.pricing-card__text_center {
+    color: #fff;
 }
 .price-wrapper {
     display: flex;
@@ -388,7 +416,7 @@ Pricing
 .price {
     font-weight: 700;
     font-size: 74px;
-    line-height: 74px;
+    line-height: 1;
     color: #252b42;
 }
 .price_center {
@@ -404,7 +432,7 @@ Pricing
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     color: #252b42;
 }
 .price__text_bold_center {
@@ -412,7 +440,7 @@ Pricing
 }
 .price__text {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
 }
 .pricing-feature-wrapper {
@@ -420,20 +448,26 @@ Pricing
 }
 .pricing-feature__text {
     font-size: 15px;
-    line-height: 28px;
+    line-height: 1.8;
     color: #252b42;
     padding-bottom: 20px;
 }
 .pricing-feature__text_center {
     color: #fff;
 }
+.price__text_center {
+    color: #fff;
+}
 .pricing-feature__text:last-child {
     padding-bottom: 0;
 }
 .button-primary_pricing {
-    padding: 18px 75px;
+
+display: block;
+    width: 100%;
+    padding: 18px 0px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
 }
 .button-primary_pricing_center {
     color: #2090f8;
@@ -468,20 +502,18 @@ Contact Us
     border: 1px solid #dddddd;
     border-radius: 20px;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-
-
 }
 .contact-form__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     text-align: left;
     color: #252b42;
 }
 .contact-form__input {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1;
     letter-spacing: 0.1px;
     color: #18171d;
     padding: 19px 20px;
@@ -499,7 +531,7 @@ Contact Us
     background: #f5f5f5;
     border: 1px solid #e8e8e8;
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1;
     letter-spacing: 0.1px;
     text-align: left;
     color: #18171d;
@@ -509,7 +541,7 @@ Contact Us
   }
   .button-primary_contact {
     padding: 18px 38px;
-    line-height: 20px;
+    line-height: 1;
     width: 145px;
   }
   .contact-info-wrapper {
@@ -533,7 +565,7 @@ Contact Us
 .contact-info__text {
     display: inline-block;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
 }
 .contact-info_poi {
@@ -582,7 +614,7 @@ Footer
     display: inline-block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     color: #ffffff;
     text-transform: capitalize;
@@ -595,7 +627,7 @@ Footer
 }
 .footer-nav__link {
     font-size: 15px;
-    line-height: 28px;
+    line-height: 1.8;
     color: #ffffff;
 }
 .footer-info-wrapper {
@@ -615,7 +647,7 @@ Footer
 .footer-info__text {
     display: inline-block;
     font-size: 15px;
-    line-height: 27px;
+    line-height: 1.8;
     color: #ffffff;
 }
 .footer-social {
