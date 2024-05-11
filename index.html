@@ -6,7 +6,22 @@
     <title>Figma Lsnd</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
+    <div id="mobilemenu" class="topmenu hide" onclick="document.getElementById('mobilemenu').classList.toggle('hide');">
+        <a href="#" class="topmenu__item">Home</a>
+        <a href="#" class="topmenu__item">Product</a>
+        <a href="#" class="topmenu__item">Pricing</a>
+        <a href="#" class="topmenu__item">About</a>
+        <a href="#" class="topmenu__item">Contact</a>
+    </div>
+    <div class="container">
+        <div class="top-panel">
+            <img class="header__logo" src="img/logo.svg" alt="#">
+            <button class="mobile-menu" onclick="document.getElementById('mobilemenu').classList.toggle('hide');">
+                <img class="mobile-menu__icon" src="img/burger-icon.svg" alt="#">
+            </button>
+        </div>
+    </div>
     <div class="banner-wrapper">
         <header id="header-section" class="header-section">
             <div class="container">
@@ -59,6 +74,12 @@
         <div class="container">
             <h2 class="section-title features-section__title">Features</h2>
             <p class="features__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <div class="video-wrapper_mobile">
+                <div class="video_mobile"></div>
+                <button class="video-button_mobile">
+                    <img class="video-button__img_mobile" src="img/play-button_mobile.svg" alt="#">
+                </button>
+            </div>
             <div class="features-wrapper">
                 <div class="features-card">
                     <div class="features-card__icon">
@@ -83,9 +104,7 @@
                 </div>
             </div>
             <div class="video-wrapper">
-                <div class="video">
-                    <img class="video__img" src="img/video-screen.png" alt="#">
-                </div>
+                <div class="video"></div>
                 <button class="video-button">
                     <img class="video-button__img" src="img/play-button.svg" alt="#">
                 </button>
@@ -97,7 +116,7 @@
             <div class="fastest-wrapper">
                 <div class="fastest">
                     <h2 class="section-title section-title_fastest">Fastest way to organize</h2>
-                    <p class="fastests__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                    <p class="fastest__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
                     <a class="button-primary button-primary_fastest" href="#">Try For Free</a>
                 </div>
                 <div class="fastest__img"></div>
@@ -113,6 +132,7 @@
                     <h2 class="section-title section-title_newsletter">Lightning fast prototyping </h2>
                     <span class="newsletter-subtitle newsletter-subtitle_center">Subscribe to our Newsletter</span>
                     <span class="newsletter__text">Available exclusivery on Figmaland</span>
+                    <div class="newsletter__img_mobile"></div>
                     <form class="newsletter-form">
                         <input class="newsletter-form__input" type="text" placeholder="Your Email">
                         <button class="button-primary newsletter-form__button" type="button">Subscribe</button>
