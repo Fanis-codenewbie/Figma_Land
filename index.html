@@ -6,7 +6,7 @@
     <title>Figma Lsnd</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
+<body class="body_styled">
     <div id="mobilemenu" class="topmenu hide" onclick="document.getElementById('mobilemenu').classList.toggle('hide');">
         <a href="#" class="topmenu__item">Home</a>
         <a href="#" class="topmenu__item">Product</a>
@@ -62,24 +62,24 @@
         </header>
         <section id="banner-section" class="banner-section">
             <div class="container">
-                <div class="banner">
+                <div class="banner text_center">
                     <h1 class="section-title banner-section__title">The best products start with Figma</h1>
                     <p class="banner__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
                     <a class="button-primary button-primary_banner" href="#">Try For Free</a>
                 </div>
             </div>
+            <span class="left-triange"></span>
+            <span class="right-triangle"></span>
         </section>
     </div>
-    <section id="features-section" class="features-section">
+    <section id="features-section" class="features-section text_center">
         <div class="container">
             <h2 class="section-title features-section__title">Features</h2>
             <p class="features__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
-            <div class="video-wrapper_mobile">
-                <div class="video_mobile"></div>
-                <button class="video-button_mobile">
-                    <img class="video-button__img_mobile" src="img/play-button_mobile.svg" alt="#">
-                </button>
-            </div>
+            <figure class="video-tutorial-mobile">
+                <img class="video-tutorial-mobile__poster" src="/img/video-screen-mobile.png" alt="#">
+                <button class="video-tutorial__button video-tutorial__button_mobile"></button>
+            </figure>
             <div class="features-wrapper">
                 <div class="features-card">
                     <div class="features-card__icon">
@@ -103,12 +103,10 @@
                     <p class="features-card__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
             </div>
-            <div class="video-wrapper">
-                <div class="video"></div>
-                <button class="video-button">
-                    <img class="video-button__img" src="img/play-button.svg" alt="#">
-                </button>
-            </div>
+            <figure class="video-tutorial">
+                <img class="video-tutorial__poster" src="/img/video-screen.png" alt="#"/>
+                <button class="video-tutorial__button"></button>
+            </figure>
         </div>
     </section>
     <section id="fastest-section" class="fastest-section">
@@ -130,9 +128,10 @@
                 <div class="newsletter">
                     <span class="newsletter-subtitle newsletter-subtitle_top">At your fingertips</span>
                     <h2 class="section-title section-title_newsletter">Lightning fast prototyping </h2>
+                    <div class="newsletter-mobile__img"></div>
                     <span class="newsletter-subtitle newsletter-subtitle_center">Subscribe to our Newsletter</span>
                     <span class="newsletter__text">Available exclusivery on Figmaland</span>
-                    <div class="newsletter__img_mobile"></div>
+                    <!-- <div class="newsletter__img_mobile"></div> -->
                     <form class="newsletter-form">
                         <input class="newsletter-form__input" type="text" placeholder="Your Email">
                         <button class="button-primary newsletter-form__button" type="button">Subscribe</button>
@@ -141,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section id="partners-section" class="partners-section">
+    <section id="partners-section" class="partners-section text_center">
         <div class="container">
             <h2 class="section-title partners-section__title">Partners</h2>
             <p class="partners__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
@@ -198,7 +197,7 @@
             <a class="button-primary button-primary_fastest" href="#">Try For Free</a>
         </div>
     </section>
-    <section id="testimonials-section" class="testimonials-section">
+    <section id="testimonials-section" class="testimonials-section text_center">
         <div class="container">
             <h2 class="section-title testimonials-section__title">Testimonials</h2>
             <img class="testimonials-logo" src="img/testimonials-logo.png" alt="#">
@@ -210,7 +209,7 @@
             <a class="button-primary button-primary_fastest" href="#">More Testimonials</a>
         </div>
     </section>
-    <section id="pricing-section" class="pricing-section">
+    <section id="pricing-section" class="pricing-section text_center">
         <div class="container">
             <h2 class="section-title section-title_pricing">Pricing</h2>
             <p class="pricing__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
@@ -232,7 +231,7 @@
                         <p class="pricing-feature__text">Pricing Feature</p>
                         <p class="pricing-feature__text">Pricing Feature</p>
                     </div>
-                    <a class="button-primary button-primary_pricing" href="#">Order Now</a>
+                    <button class="button-primary button-primary_pricing" href="#">Order Now</button>
                 </div>
                 <div class="pricing-card pricing-card_center">
                     <span class="pricing-card__title pricing-card__title_center">STANDARD</span>
@@ -251,7 +250,7 @@
                         <p class="pricing-feature__text pricing-feature__text_center">Pricing Feature</p>
                         <p class="pricing-feature__text pricing-feature__text_center">Pricing Feature</p>
                     </div>
-                    <a class="button-primary button-primary_pricing button-primary_pricing_center" href="#">Order Now</a>
+                    <button class="button-primary button-primary_pricing button-primary_pricing_center" href="#">Order Now</button>
                 </div>
                 <div class="pricing-card">
                     <span class="pricing-card__title">BUSINESS</span>
@@ -270,28 +269,30 @@
                         <p class="pricing-feature__text">Pricing Feature</p>
                         <p class="pricing-feature__text">Pricing Feature</p>
                     </div>
-                    <a class="button-primary button-primary_pricing" href="#">Order Now</a>
+                    <button class="button-primary button-primary_pricing" href="#">Order Now</button>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact-section" class="contact-section">
         <div class="container">
-            <h2 class="section-title contact-section__title">Contact Us</h2>
-            <p class="contact-section__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <h2 class="section-title contact-section__title text_center">Contact Us</h2>
+            <p class="contact-section__text text_center">Most calendars are designed for teams. Slate is designed for freelancers</p>
             <div class="contact-wrapper">
-                <div class="contact-form-wrapper">
-                    <span class="contact-form__title">Contact Us</span>
-                    <input class="contact-form__input" type="text" placeholder="Your Name">
-                    <input class="contact-form__input" type="text" placeholder="Your Email">
-                    <textarea class="contact-form__note" id="note" name="note" rows="40" cols="40" placeholder="Your Message"></textarea>
-                    <a class="button-primary button-primary_contact" href="#">Send</a>
-                </div>
+                <!-- <div class="contact-form"> -->
+                    <form class="contact-form">
+                        <div class="contact-form__title text_center">Contact Us</div>
+                        <input class="contact-form__input" type="text" name="name" placeholder="Your Name">
+                        <input class="contact-form__input" type="text" name="email" placeholder="Your Email">
+                        <textarea class="contact-form__message" name="message" rows="10" placeholder="Your Message"></textarea>
+                        <button class="button-primary button-primary_contact">Send</button>
+                    </form>
+                <!-- </div> -->
                 <div class="contact-info-wrapper">
                     <div class="contact-info-inner">
                         <div class="contact-info contact-info_poi">
                             <img class="contact-info__icon" src="img/poi-blue.svg" alt="#">
-                            <span class="contact-info__text">6386 Spring St undefined Anchorage, Georgia 12473 United States</span>
+                            <span class="contact-info__text text_center">6386 Spring St undefined Anchorage, Georgia 12473 United States</span>
                         </div>
                         <div class="contact-info contact-info_phone">
                             <img class="contact-info__icon" src="img/phone-blue.svg" alt="#">
