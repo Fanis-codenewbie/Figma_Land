@@ -68,7 +68,7 @@
                     <a class="button-primary button-primary_banner" href="#">Try For Free</a>
                 </div>
             </div>
-            <span class="left-triange"></span>
+            <span class="left-triangle"></span>
             <span class="right-triangle"></span>
         </section>
     </div>
@@ -131,7 +131,6 @@
                     <div class="newsletter-mobile__img"></div>
                     <span class="newsletter-subtitle newsletter-subtitle_center">Subscribe to our Newsletter</span>
                     <span class="newsletter__text">Available exclusivery on Figmaland</span>
-                    <!-- <div class="newsletter__img_mobile"></div> -->
                     <form class="newsletter-form">
                         <input class="newsletter-form__input" type="text" placeholder="Your Email">
                         <button class="button-primary newsletter-form__button" type="button">Subscribe</button>
@@ -203,7 +202,7 @@
             <img class="testimonials-logo" src="img/testimonials-logo.png" alt="#">
             <p class="testimonials__text">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
             <div class="testimonials-card">
-                <img class="testimonials-card__img" src="img/testimonials-card-img.png" alt="#">
+                <div class="testimonials-card__img"></div>
                 <p class="testimonials-card__text">Organize across Ui designer</p>
             </div>
             <a class="button-primary button-primary_fastest" href="#">More Testimonials</a>
@@ -279,28 +278,38 @@
             <h2 class="section-title contact-section__title text_center">Contact Us</h2>
             <p class="contact-section__text text_center">Most calendars are designed for teams. Slate is designed for freelancers</p>
             <div class="contact-wrapper">
-                <!-- <div class="contact-form"> -->
-                    <form class="contact-form">
-                        <div class="contact-form__title text_center">Contact Us</div>
-                        <input class="contact-form__input" type="text" name="name" placeholder="Your Name">
-                        <input class="contact-form__input" type="text" name="email" placeholder="Your Email">
-                        <textarea class="contact-form__message" name="message" rows="10" placeholder="Your Message"></textarea>
-                        <button class="button-primary button-primary_contact">Send</button>
-                    </form>
-                <!-- </div> -->
+                <form class="contact-form">
+                    <div class="contact-form__title text_center">Contact Us</div>
+                    <input class="contact-form__input" type="text" name="name" placeholder="Your Name">
+                    <input class="contact-form__input" type="text" name="email" placeholder="Your Email">
+                    <textarea class="contact-form__message" name="message" rows="10" placeholder="Your Message"></textarea>
+                    <button class="button-primary button-primary_contact">Send</button>
+                </form>
                 <div class="contact-info-wrapper">
                     <div class="contact-info-inner">
                         <div class="contact-info contact-info_poi">
-                            <img class="contact-info__icon" src="img/poi-blue.svg" alt="#">
-                            <span class="contact-info__text text_center">6386 Spring St undefined Anchorage, Georgia 12473 United States</span>
+                            <button class="contact-info__button-poi">
+                                <img class="contact-info__icon" src="img/poi-blue.svg" alt="#">
+                            </button>
+                            <button class="contact-info__button-poi">
+                                <span class="contact-info__text text_center">6386 Spring St undefined Anchorage, Georgia 12473 United States</span>
+                            </button>
                         </div>
                         <div class="contact-info contact-info_phone">
-                            <img class="contact-info__icon" src="img/phone-blue.svg" alt="#">
-                            <span class="contact-info__text">(843) 555-0130</span>
+                            <button class="contact-info__button-phone">
+                                <img class="contact-info__icon" src="img/phone-blue.svg" alt="#">
+                            </button>
+                            <button class="contact-info__button-phone">
+                                <span class="contact-info__text">(843) 555-0130</span>
+                            </button>
                         </div>
                         <div class="contact-info contact-info_letter">
-                            <img class="contact-info__icon" src="img/letter-blue.svg" alt="#">
-                            <span class="contact-info__text">willie.jennings@example.com</span>
+                            <button class="contact-info__button-letter">
+                                <img class="contact-info__icon" src="img/letter-blue.svg" alt="#">
+                            </button>
+                            <button class="contact-info__button-letter">
+                                <span class="contact-info__text">willie.jennings@example.com</span>
+                            </button>
                         </div>
                     </div>
                     <div class="contact-map">map</div>

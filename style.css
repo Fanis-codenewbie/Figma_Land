@@ -31,7 +31,6 @@ textarea {
     resize: none;
 }
 button {
-    display: block;
     border: none;
     font: inherit;
     background-color: transparent;
@@ -106,8 +105,7 @@ Banner
     padding-top: 49px;
     background: url(img/banner-bg.jpg) no-repeat bottom;
     background-size: cover;
-    margin-bottom: 63px;
-
+    margin-bottom: 126px;
 }
 .header {
     display: flex;
@@ -170,26 +168,26 @@ Banner
     padding: 16px 62px;
     margin-bottom: 243px;
 }
-.left-triange {
-    /* position: absolute;
-    bottom: 0;
+.left-triangle {
+    position: absolute;
+    bottom: -1px;
     left: 0;
-	border-bottom: 187px solid orange;
-	border-right: 888px solid transparent; */
+	border-bottom: 27vh solid #fff;
+    border-right: 50vw solid transparent;
+
 }
 .right-triangle {
 
-    /* position: absolute;
-    bottom: 0;
+    position: absolute;
+    bottom: -1px;
     right: 0;
-	border-bottom: 187px solid orange;
-	border-left: 888px solid transparent; */
+    border-bottom: 27vh solid #fff;
+    border-left: 50vw solid transparent;
 }
 /* 
 Features 
 */
 .features-section {
-    padding-top: 63px;
     margin-bottom: 330px;
 
 }
@@ -224,7 +222,7 @@ Features
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     letter-spacing: 0.1px;
     color: #252b42;
     padding-bottom: 20px;
@@ -243,7 +241,6 @@ Features
     border-radius: 45px;
     box-shadow: 0 8px 63px 0 rgba(0, 0, 0, 0.15);
 }
-
 .video-tutorial__button {
     position: absolute;
     width: 48px;
@@ -353,6 +350,10 @@ Newsletter
     line-height: 1;
     padding-left: 10px;
 }
+.newsletter-form {
+    margin-top: 28px;
+    margin-left: 12px;
+}
 .newsletter-form__input {
     width: 273px;
     height: 54px;
@@ -360,8 +361,6 @@ Newsletter
     background: #f4f4f4;
     border: 1px solid #e8e8e8;
     border-radius: 39px;
-    margin-top: 32px;
-    margin-left: 10px;
 }
 .newsletter-form__input::placeholder {
     font-size: 14px;
@@ -371,7 +370,6 @@ Newsletter
     color: #18171d;
 }
 .newsletter-form__button {
-    display: inline-block;
     padding: 19px 38px;
 }
 /* 
@@ -441,6 +439,9 @@ Testimonials
 .testimonials-card__img {
     width: 50px;
     height: 50px;
+    display: inline-block;
+    background: url(img/testimonials-card-img.png) no-repeat;
+    background-size: contain;
 }
 .testimonials-card__text {
     font-size: 16px;
@@ -568,8 +569,6 @@ Pricing
     padding-bottom: 0;
 }
 .button-primary_pricing {
-
-display: block;
     width: 100%;
     padding: 18px 0px;
     font-size: 20px;
@@ -596,9 +595,9 @@ Contact Us
 }
 .contact-wrapper {
     display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    gap: 7px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 .contact-form {
     flex-shrink: 0;
@@ -608,7 +607,6 @@ Contact Us
     border-radius: 20px;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     text-align: left;
-    margin-left: 41px;
 }
 .contact-form__title {
     font-weight: 700;
@@ -652,13 +650,14 @@ Contact Us
     width: 145px;
   }
   .contact-info-wrapper {
+    max-width: 725px;
     padding-top: 28px;
   }
 .contact-info-inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 35px;
+    gap: 10px;
 }
 .contact-info {
     display: flex;
@@ -667,7 +666,7 @@ Contact Us
 }
 .contact-info__icon {
     display: inline-block;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 }
 .contact-info__text {
     display: inline-block;
@@ -676,13 +675,13 @@ Contact Us
     letter-spacing: 0.1px;
 }
 .contact-info_poi {
-    flex-basis: 35%;
+    flex-basis: 43%;
 }
 .contact-info_phone {
-    flex-basis: 15%;
+    flex-basis: 19%;
 }
 .contact-info_letter {
-    flex-basis: 25%;
+    flex-basis: 34%;
 }
 .contact-map {
     width: 516px;
@@ -691,7 +690,7 @@ Contact Us
     border: 1px solid #dddddd;
 }
 .contact-social {
-    margin-left: 52px;
+    margin-left: 9px;
 }
 .contact-social__link {
     display: inline-block;
@@ -792,13 +791,14 @@ Mobile
     .container {
         max-width: none;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 16px;
     }
     .banner-wrapper {
         padding: 0;
-        margin-top: -88px;
+        margin-top: -84px;
         background: url(img/banner-bg-mobile.png) no-repeat bottom;
         background-size: cover;
+        margin-bottom: 110px;
     }
     .header {
         display: none;
@@ -807,29 +807,37 @@ Mobile
         margin: 0;
     }
     .banner-section {
-        padding-top: 206px;
+        padding-top: 202px;
     }
     .banner-section__title {
         font-weight: 400;
         font-size: 48px;
         line-height: 1.1;
-        padding: 0 42px 27px;
+        padding: 0 26px;
+        margin-bottom: 27px;
     }
     .banner__text {
-        padding: 0 75px 70px;
+        padding: 0 60px;
+        margin-bottom: 70px;
+    }
+    .button-primary_banner {
+        margin-bottom: 248px;
+    }
+    .left-triangle,
+    .right-triangle {
+        border-bottom: 15vh solid #fff;
     }
     .features-section {
-        padding-top: 110px;
         margin-bottom: 190px;
     }
     .features__text {
-        padding: 0 76px 66px;
+        padding: 0 60px;
+        margin-bottom: 60px;
     }
     .video-tutorial-mobile {
         display: block;
         position: relative;
-        width: calc(100% - 16px - 16px);
-        margin: 0 16px 70px;
+        margin-bottom: 70px;
     }
     .video-tutorial-mobile__poster {
         border-radius: 15px;
@@ -853,27 +861,37 @@ Mobile
     }
     .fastest-wrapper {
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         gap: 65px;
         padding-bottom: 0;
-        margin-left: 0;
+        margin: 0 auto;
+    }
+    .fastest {
+        margin: 0 auto;
     }
     .section-title_fastest {
-        max-width: none;
-        padding: 0 41px 27px;
+        display: inline-block;
+        padding: 0 26px;
+        margin-bottom: 27px;
     }
     .fastest__text {
-        padding: 0 76px 70px;
+        padding: 0 60px;
+        margin-bottom: 70px;
     }
     .fastest__img {
-        width: 379px;
+        width: 380px;
         height: 212px;
+        background: url(img/fastest-mobile.png) no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }    
+    .newsletter-section {
+        margin-bottom: 175px;
     }
     .newsletter-wrapper {
         padding-left: 0;
-    }
-    .newsletter-section {
-
+        text-align: center;
     }
     .newsletter__img {
         display: none;
@@ -881,13 +899,51 @@ Mobile
     .newsletter {
         padding-left: 0;
     }
+    .newsletter-subtitle_top {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 17px;
+    }
+    .section-title_newsletter {
+        text-align: center;
+        display: inline-block;
+        padding: 0 26px;
+        margin-bottom: 72px;
+    }
     .newsletter-mobile__img {
         display: block;    
         width: 390px;
         height: 295px;
         background: url(img/newsletter-mobile.png) no-repeat;
         background-size: contain;
-        margin-bottom: 90px;
+        margin: 0 auto 90px;
+    }
+    .newsletter-subtitle_center {
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    .newsletter__text {
+        padding-left: 0;
+        margin-bottom: 34px;
+    }
+    .newsletter-form {
+        margin: 0;
+    }
+    .newsletter-form__input,
+    .newsletter-form__button {
+        width: 353px;
+        display: block;
+        margin: 0 auto;
+    }
+    .newsletter-form__input {
+        margin-bottom: 12px;
+    }
+    .partners-section {
+        margin-bottom: 150px;
+    }
+    .partners__text {
+        padding: 0 60px;
+        margin-bottom: 100px;
     }
     .partners-card-wrapper {
         gap: 30px;
@@ -895,15 +951,61 @@ Mobile
     .partners-card:nth-child(n + 4) {
         display: none;
     }
+    .partners-card-wrapper {
+        margin-bottom: 100px;
+    }
+    .testimonials-section__title {
+        margin-bottom: 105px;
+    }
+    .testimonials-logo {
+        padding-bottom: 53px;
+    }
+    .testimonials__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.17px;
+        padding: 0 50px;
+        margin-bottom: 53px;
+    }
+    .testimonials-card {
+        margin-bottom: 95px;
+    }
+    .testimonials-card__img {
+        width: 42px;
+        height: 42px;
+        background: url(img/testimonials-card-img-mobile.png) no-repeat;
+        background-size: contain;
+    }
+    .testimonials-card__text {
+        font-size: 13px;
+        max-width: 108px;
+    }
+    .pricing-section {
+        padding-top: 120px;
+        padding-bottom: 118px;
+        margin-bottom: 160px;
+    }
     .pricing__text {
         width: auto;
+        padding: 0 60px;
+        margin-bottom: 108px;
     }
     .pricing-card-wrapper {
-        /* flex-wrap: wrap; */
         flex-direction: column;
+        gap: 50px;
+    }
+    .contact-section {
+        margin-bottom: 150px;
+    }
+    .contact-section__text {
+        padding: 0 60px;
+        margin-bottom: 70px;
     }
     .contact-wrapper {
         flex-direction: column;
+        padding-top: 0;
+        gap: 80px;
     }
     .contact-map {
         display: none;
@@ -911,35 +1013,56 @@ Mobile
     .contact-info-inner {
         flex-direction: column;
         align-items: start;
-        order: 2
-        ;
+        order: 2;
+        gap: 25px;
+        padding: 0 18px;
     }
     .contact-info {
         flex-direction: row;
+    }
+    .contact-info__text {
+        text-align: left;
+        padding-left: 20px;
     }
     .contact-form {
         order: 3;
         flex-shrink: 1;
         width: 358px;
-        margin-left: 0;
+        margin: 0 auto;
     }
-
     .contact-info__icon {
         padding-bottom: 0;
     }
     .contact-info-wrapper {
         display: flex;
         flex-direction: column;
+        padding-top: 0;
     }
     .contact-social {
         order: 1;
+        margin-left: 0;
+        margin-bottom: 88px;
+        text-align: center;
     }
-    .footer-nav-wrapper {
-        flex-direction: column;
-        width: auto;
+    .footer-section {
+        padding-top: 117px;
+        padding-bottom: 127px;
     }
     .footer-wrapper {
         flex-direction: column;
     }
-
+    .footer-nav-wrapper {
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+        gap: 83px;
+        margin-bottom: 75px;
+    }
+    .footer-info_poi,
+    .footer-info_phone {
+        margin-left: 55px;
+    }
+    .footer-social {
+        justify-content: center;
+    }
 }
