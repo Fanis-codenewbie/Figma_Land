@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Lsnd</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>Figma Land</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body_styled">
@@ -16,9 +17,9 @@
     </div>
     <div class="container">
         <div class="top-panel">
-            <img class="header__logo" src="img/logo.svg" alt="#">
+            <img class="header__logo" src="./img/logo.svg" alt="#">
             <button class="mobile-menu" onclick="document.getElementById('mobilemenu').classList.toggle('hide');">
-                <img class="mobile-menu__icon" src="img/burger-icon.svg" alt="#">
+                <img class="mobile-menu__icon" src="./img/burger-icon.svg" alt="#">
             </button>
         </div>
     </div>
@@ -45,16 +46,16 @@
                             </li>
                         </ul>
                     </nav>
-                    <img class="header__logo" src="img/logo.svg" alt="#">
+                    <img class="header__logo" src="./img/logo.svg" alt="#">
                     <div class="social">
                         <a class="social__link" href="#">
-                            <img class="social__link_img" src="img/tw.svg" alt="#">
+                            <img class="social__link_img" src="./img/tw.svg" alt="#">
                         </a>
                         <a class="social__link" href="#">
-                            <img class="social__link_img" src="img/fb.svg" alt="#">
+                            <img class="social__link_img" src="./img/fb.svg" alt="#">
                         </a>
                         <a class="social__link" href="#">
-                            <img class="social__link_img" src="img/in.svg" alt="#">
+                            <img class="social__link_img" src="./img/in.svg" alt="#">
                         </a>
                     </div>
                 </div>
@@ -77,34 +78,25 @@
             <h2 class="section-title features-section__title">Features</h2>
             <p class="features__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
             <figure class="video-tutorial-mobile">
-                <img class="video-tutorial-mobile__poster" src="/img/video-screen-mobile.png" alt="#">
+                <img class="video-tutorial-mobile__poster" src="./img/video-screen-mobile.png" alt="#">
                 <button class="video-tutorial__button video-tutorial__button_mobile"></button>
             </figure>
             <div class="features-wrapper">
-                <div class="features-card">
-                    <div class="features-card__icon">
-                        <img class="features-card__icon_img" src="img/circle-square.svg" alt="#">
-                    </div>
+                <div class="features-card features-card_circle-square">
                     <span class="features-card__title">OpenType features Variable fonts</span>
                     <p class="features-card__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
-                <div class="features-card">
-                    <div class="features-card__icon">
-                        <img class="features-card__icon_img" src="img/pencil.svg" alt="#">
-                    </div>
+                <div class="features-card features-card_pencil">
                     <span class="features-card__title">Design with real data </span>
                     <p class="features-card__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
-                <div class="features-card">
-                    <div class="features-card__icon">
-                        <img class="features-card__icon_img" src="img/brush.svg" alt="#">
-                    </div>
+                <div class="features-card features-card_brush">
                     <span class="features-card__title">Fastest way to take action</span>
                     <p class="features-card__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
             </div>
             <figure class="video-tutorial">
-                <img class="video-tutorial__poster" src="/img/video-screen.png" alt="#">
+                <img class="video-tutorial__poster" src="./img/video-screen.png" alt="#">
                 <button class="video-tutorial__button"></button>
             </figure>
         </div>
@@ -113,7 +105,7 @@
         <div class="container">
             <div class="fastest-wrapper">
                 <div class="fastest">
-                    <h2 class="section-title section-title_fastest">Fastest way to organize</h2>
+                    <h2 class="section-title fastest-section__title">Fastest way to organize</h2>
                     <p class="fastest__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
                     <a class="button-primary button-primary_fastest" href="#">Try For Free</a>
                 </div>
@@ -127,12 +119,12 @@
                 <div class="newsletter__img"></div>
                 <div class="newsletter">
                     <span class="newsletter-subtitle newsletter-subtitle_top">At your fingertips</span>
-                    <h2 class="section-title section-title_newsletter">Lightning fast prototyping </h2>
+                    <h2 class="section-title newsletter-section__title">Lightning fast prototyping </h2>
                     <div class="newsletter-mobile__img"></div>
                     <span class="newsletter-subtitle newsletter-subtitle_center">Subscribe to our Newsletter</span>
                     <span class="newsletter__text">Available exclusivery on Figmaland</span>
                     <form class="newsletter-form">
-                        <input class="newsletter-form__input" type="text" placeholder="Your Email">
+                        <input class="newsletter-form__input" type="text" name="email" placeholder="Your Email">
                         <button class="button-primary newsletter-form__button" type="button">Subscribe</button>
                     </form>
                 </div>
@@ -144,53 +136,29 @@
             <h2 class="section-title partners-section__title">Partners</h2>
             <p class="partners__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
             <div class="partners-card-wrapper">
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_google.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_google">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_amazon.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_amazon">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_microsoft.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_microsoft">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_uber.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_uber">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_dropbox.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_dropbox">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_google.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_google">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_uber.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_uber">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
-                <div class="partners-card">
-                    <div class="card__inner">
-                        <p class="partners-card__text">Client Name</p>
-                        <img class="partner-card__logo" src="img/logo_amazon.png" alt="#">
-                    </div>
+                <div class="partners-card partners-card_amazon">
+                    <p class="partners-card__text">Client Name</p>
                 </div>
             </div>
             <a class="button-primary button-primary_fastest" href="#">Try For Free</a>
@@ -199,18 +167,14 @@
     <section id="testimonials-section" class="testimonials-section text_center">
         <div class="container">
             <h2 class="section-title testimonials-section__title">Testimonials</h2>
-            <img class="testimonials-logo" src="img/testimonials-logo.png" alt="#">
             <p class="testimonials__text">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
-            <div class="testimonials-card">
-                <div class="testimonials-card__img"></div>
-                <p class="testimonials-card__text">Organize across Ui designer</p>
-            </div>
+            <p class="testimonials-card__text">Organize across Ui designer</p>
             <a class="button-primary button-primary_fastest" href="#">More Testimonials</a>
         </div>
     </section>
     <section id="pricing-section" class="pricing-section text_center">
         <div class="container">
-            <h2 class="section-title section-title_pricing">Pricing</h2>
+            <h2 class="section-title pricing-section__title">Pricing</h2>
             <p class="pricing__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
             <div class="pricing-card-wrapper">
                 <div class="pricing-card">
@@ -287,41 +251,35 @@
                 </form>
                 <div class="contact-info-wrapper">
                     <div class="contact-info-inner">
-                        <div class="contact-info contact-info_poi">
-                            <button class="contact-info__button-poi">
-                                <img class="contact-info__icon" src="img/poi-blue.svg" alt="#">
-                            </button>
-                            <button class="contact-info__button-poi">
+                        <a class="contact-info__link" href="#">
+                            <div class="contact-info contact-info_poi">
                                 <span class="contact-info__text text_center">6386 Spring St undefined Anchorage, Georgia 12473 United States</span>
-                            </button>
-                        </div>
-                        <div class="contact-info contact-info_phone">
-                            <button class="contact-info__button-phone">
-                                <img class="contact-info__icon" src="img/phone-blue.svg" alt="#">
-                            </button>
-                            <button class="contact-info__button-phone">
+                            </div>
+                        </a>
+                        <a class="contact-info__link" href="tel:8435550130">
+                            <div class="contact-info contact-info_phone">
                                 <span class="contact-info__text">(843) 555-0130</span>
-                            </button>
-                        </div>
-                        <div class="contact-info contact-info_letter">
-                            <button class="contact-info__button-letter">
-                                <img class="contact-info__icon" src="img/letter-blue.svg" alt="#">
-                            </button>
-                            <button class="contact-info__button-letter">
+                            </div>
+                        </a>
+                        <a class="contact-info__link" href="mailto:willie.jennings@example.com">
+                            <div class="contact-info contact-info_letter">
                                 <span class="contact-info__text">willie.jennings@example.com</span>
-                            </button>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="contact-map">map</div>
+                    <div class="contact-map">
+                        <iframe width="516" height="323" frameborder="0" scrolling="no" 
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-122.44850635528566%2C37.760096010161554%2C-122.39735126495363%2C37.79327023444296&amp;layer=mapnik" style="border: 1px solid black"></iframe>                    
+                    </div>
                     <div class="contact-social">
                         <a class="contact-social__link" href="#">
-                            <img class="contact-social__link_img_blue" src="img/tw-blue.svg" alt="#">
+                            <img class="contact-social__link_img_blue" src="./img/tw-blue.svg" alt="#">
                         </a>
                         <a class="contact-social__link" href="#">
-                            <img class="contact-social__link_img_blue" src="img/fb-blue.svg" alt="#">
+                            <img class="contact-social__link_img_blue" src="./img/fb-blue.svg" alt="#">
                         </a>
                         <a class="contact-social__link" href="#">
-                            <img class="contact-social__link_img_blue" src="img/in-blue.svg" alt="#">
+                            <img class="contact-social__link_img_blue" src="./img/in-blue.svg" alt="#">
                         </a>
                     </div>
                 </div>
@@ -336,19 +294,19 @@
                         <span class="footer-nav__title">Pages</span>
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Home</a>
+                                <a class="footer-nav__link" href="#">Home</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Product</a>
+                                <a class="footer-nav__link" href="#">Product</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Pricing</a>
+                                <a class="footer-nav__link" href="#">Pricing</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">About</a>
+                                <a class="footer-nav__link" href="#">About</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Contact</a>
+                                <a class="footer-nav__link" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -356,19 +314,19 @@
                         <span class="footer-nav__title">Tomothy</span>
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Eleanor Edwards</a>
+                                <a class="footer-nav__link" href="#">Eleanor Edwards</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Ted Robertson</a>
+                                <a class="footer-nav__link" href="#">Ted Robertson</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Annette Russell</a>
+                                <a class="footer-nav__link" href="#">Annette Russell</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Jennie Mckinney</a>
+                                <a class="footer-nav__link" href="#">Jennie Mckinney</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Gloria Richards</a>
+                                <a class="footer-nav__link" href="#">Gloria Richards</a>
                             </li>
                         </ul>
                     </div>
@@ -376,41 +334,39 @@
                         <span class="footer-nav__title">Jane Black</span>
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Philip Jones</a>
+                                <a class="footer-nav__link" href="#">Philip Jones</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Product</a>
+                                <a class="footer-nav__link" href="#">Product</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Colleen Russell</a>
+                                <a class="footer-nav__link" href="#">Colleen Russell</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Marvin Hawkins</a>
+                                <a class="footer-nav__link" href="#">Marvin Hawkins</a>
                             </li>
                             <li class="footer-nav__item">
-                                <a class="footer-nav__link" href="">Bruce Simmmons</a>
+                                <a class="footer-nav__link" href="#">Bruce Simmmons</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="footer-info-wrapper">
-                    <div class="footer-info footer-info_poi">
-                        <img class="footer-info__icon" src="img/poi.svg" alt="#">
+                    <a class="footer-info__link footer-info__link_poi" href="#">
                         <span class="footer-info__text">7480 Mockingbird Hill undefined</span>
-                    </div>
-                    <div class="footer-info footer-info_phone">
-                        <img class="footer-info__icon" src="img/phone.svg" alt="#">
+                    </a>
+                    <a class="footer-info__link footer-info__link_phone" href="#">
                         <span class="footer-info__text">(239) 555-0108</span>
-                    </div>
+                    </a>
                     <div class="footer-social">
                         <a class="footer-social__link" href="#">
-                            <img class="footer-social__link_img" src="img/tw.svg" alt="#">
+                            <img class="footer-social__link_img" src="./img/tw.svg" alt="#">
                         </a>
                         <a class="footer-social__link" href="#">
-                            <img class="footer-social__link_img" src="img/fb.svg" alt="#">
+                            <img class="footer-social__link_img" src="./img/fb.svg" alt="#">
                         </a>
                         <a class="footer-social__link" href="#">
-                            <img class="footer-social__link_img" src="img/in.svg" alt="#">
+                            <img class="footer-social__link_img" src="./img/in.svg" alt="#">
                         </a>
                     </div>
                 </div>

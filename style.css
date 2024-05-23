@@ -8,6 +8,7 @@
 .body_styled {
     color: #374754; 
     font: 400 28px "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #fff;
 }
 
 a {
@@ -69,9 +70,6 @@ button {
 .title_h2_mb12 {
 
 }
-.section_margin_bottom {
-
-}
 .bred {
     border: 1px solid red;
 }
@@ -97,6 +95,7 @@ Topmenu
 .mobile-menu {
     width: 40px;
     height: 40px;
+    z-index: 1;
 }
 /* 
 Banner 
@@ -214,9 +213,19 @@ Features
 }
 .features-card {
     max-width: 231px;
+    padding-top: 81px;
 }
-.features-card__icon {
-    padding-bottom: 14px;
+.features-card_circle-square {
+    background: url(./img/circle-square.svg) top no-repeat;
+    background-size: 61px 61px;
+}
+.features-card_pencil {
+    background: url(./img/pencil.svg) top no-repeat;
+    background-size: 61px 61px;
+}
+.features-card_brush {
+    background: url(./img/brush.svg) top no-repeat;
+    background-size: 61px 61px;
 }
 .features-card__title {
     display: block;
@@ -225,7 +234,7 @@ Features
     line-height: 1.4;
     letter-spacing: 0.1px;
     color: #252b42;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .features-card__text {
     font-size: 18px;
@@ -274,13 +283,13 @@ Fastest
 .fastest {
     max-width: 550px;
 }
-.section-title_fastest {
+.fastest-section__title {
     max-width: 335px;
-    padding-top: 6px;
-    padding-bottom: 32px;
+    margin-top: 6px;
+    margin-bottom: 32px;
 }
 .fastest__text {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
     line-height: 1.4;
 }
 .button-primary_fastest {
@@ -306,7 +315,7 @@ Newsletter
     justify-content: space-between;
     gap: 50px;
     text-align: left;
-    padding-left: 54px;
+    margin-left: 54px;
 }
 .newsletter__img {
     display: inline-block;
@@ -318,7 +327,7 @@ Newsletter
 .newsletter {
     display: inline-block;
     vertical-align: top;
-    padding-left: 107px;
+    margin-left: 107px;
 }
 .newsletter-subtitle {
     display: block;
@@ -329,26 +338,26 @@ Newsletter
     color: #252b42;
 }
 .newsletter-subtitle_top {
-    padding-top: 76px;
-    padding-bottom: 12px;
+    margin-top: 76px;
+    margin-bottom: 12px;
 }
-.section-title_newsletter {
+.newsletter-section__title {
     max-width: 325px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
     line-height: 1.2;
 }
 .newsletter-mobile__img {
     display: none;
 }
 .newsletter-subtitle_center {
-    padding-left: 10px;
+    margin-left: 10px;
     line-height: 1;
 }
 .newsletter__text {
     display: inline-block;
     font-size: 18px;
     line-height: 1;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 .newsletter-form {
     margin-top: 28px;
@@ -379,13 +388,13 @@ Partners
     margin-bottom: 191px;
 }
 .partners-section__title {
-    padding-bottom: 29px;
+    margin-bottom: 29px;
 }
 .partners__text {
     display: inline-block;
     line-height: 1.4;
     max-width: 530px;
-    padding-bottom: 95px;
+    margin-bottom: 95px;
 } 
 .partners-card-wrapper {
     display: flex;
@@ -395,19 +404,33 @@ Partners
 }
 .partners-card {
     height: 165px;
-    display: flex;
-    align-items: center;
-    padding: 0 39px;
     border: 1px solid #d8d8d8;
 }
-.card__inner {
-    margin: auto;
+.partners-card_google {
+    width: 273px;
+    background: url(./img/logo_google.png) 50% 70% no-repeat;
+}
+.partners-card_amazon {
+    width: 273px;
+    background: url(./img/logo_amazon.png) 50% 70% no-repeat;
+}
+.partners-card_microsoft {
+    width: 301px;
+    background: url(./img/logo_microsoft.png) 50% 70% no-repeat;
+}
+.partners-card_uber {
+    width: 220px;
+    background: url(./img/logo_uber.png) 50% 70% no-repeat;
+}
+.partners-card_dropbox {
+    width: 309px;
+    background: url(./img/logo_dropbox.png) 50% 70% no-repeat;
 }
 .partners-card__text {
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.1px;
-    padding-bottom: 15px;
+    padding-top: 30px;
 }
 /* 
 Testimonials 
@@ -418,37 +441,24 @@ Testimonials
 .testimonials-section__title {
     margin-bottom: 91px;
 }
-.testimonials-logo {
-    display: block;
-    width: 150px;
-    margin: 0 auto;
-    padding-bottom: 60px;
-}
 .testimonials__text {
     display: inline-block;
     max-width: 940px;
     line-height: 1.4;
+    padding-top: 120px;
+    background: url(./img/testimonials-logo.png) top no-repeat;
     margin-bottom: 64px;
-}
-.testimonials-card {
-    display: flex;
-    justify-content: center;
-    gap: 13px;
-    margin-bottom: 82px;
-}
-.testimonials-card__img {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background: url(img/testimonials-card-img.png) no-repeat;
-    background-size: contain;
 }
 .testimonials-card__text {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.1px;
-    max-width: 125px;
+    width: 188px;
     text-align: left;
+    padding-left: 63px;
+    background: url(img/testimonials-card-img.png) no-repeat;
+    background-size: 50px 50px;
+    margin: 0 auto 82px;
 }
 /* 
 Pricing 
@@ -459,9 +469,9 @@ Pricing
     padding-bottom: 98px;
     margin-bottom: 213px;
 }
-.section-title_pricing {
+.pricing-section__title {
     color: #fff;
-    padding-bottom: 27px;
+    margin-bottom: 27px;
 }
 .pricing__text {
     display: inline-block;
@@ -498,7 +508,7 @@ Pricing
     letter-spacing: 0.1px;
     color: #252b42;
     text-transform: uppercase;
-    padding-bottom: 3px;
+    margin-bottom: 3px;
 }
 .pricing-card__title_center {
     color: #fff;
@@ -509,7 +519,7 @@ Pricing
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.1px;
-    padding-bottom: 22px;
+    margin-bottom: 22px;
 }
 .pricing-card__text_center {
     color: #fff;
@@ -518,7 +528,7 @@ Pricing
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 .price {
     font-weight: 700;
@@ -551,13 +561,13 @@ Pricing
     letter-spacing: 0.1px;
 }
 .pricing-feature-wrapper {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .pricing-feature__text {
     font-size: 15px;
     line-height: 1.8;
     color: #252b42;
-    padding-bottom: 21px;
+    margin-bottom: 21px;
 }
 .pricing-feature__text_center {
     color: #fff;
@@ -566,7 +576,7 @@ Pricing
     color: #fff;
 }
 .pricing-feature__text:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .button-primary_pricing {
     width: 100%;
@@ -651,22 +661,13 @@ Contact Us
   }
   .contact-info-wrapper {
     max-width: 725px;
-    padding-top: 28px;
+    margin-top: 28px;
   }
 .contact-info-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-}
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact-info__icon {
-    display: inline-block;
-    padding-bottom: 12px;
+    gap: 45px;
 }
 .contact-info__text {
     display: inline-block;
@@ -675,14 +676,26 @@ Contact Us
     letter-spacing: 0.1px;
 }
 .contact-info_poi {
-    flex-basis: 43%;
+    width: 293px;
+    padding-top: 52px;
+    background: url(./img/poi-blue.svg) top no-repeat;
 }
 .contact-info_phone {
-    flex-basis: 19%;
+    width: 117px;
+    padding-top: 54px;
+    background: url(./img/phone-blue.svg) top no-repeat;
 }
 .contact-info_letter {
-    flex-basis: 34%;
+    width: 225px;
+    padding-top: 42px;
+    background: url(./img/letter-blue.svg) top no-repeat;
 }
+
+
+
+
+
+
 .contact-map {
     width: 516px;
     height: 323px;
@@ -730,7 +743,7 @@ Footer
     margin-bottom: 17px;
 }
 .footer-nav__item {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 .footer-nav__link {
     font-size: 15px;
@@ -741,16 +754,21 @@ Footer
     text-align: left;
     margin-right: 13px;
 }
-.footer-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.footer-info__link {
+    display: block;
 }
-.footer-info_poi {
-    padding-bottom: 16px;
+.footer-info__link_poi {
+    padding-left: 56px;
+    padding-bottom: 10px;
+    background: url(./img/poi.svg) left no-repeat;
+    background-size: 46px 46px;
+    margin-bottom: 20px;
 }
-.footer-info_phone {
-    padding-bottom: 34px;
+.footer-info__link_phone {
+    padding-left: 46px;
+    background: url(./img/phone.svg) left no-repeat;
+    background-size: 36px 36px;
+    margin-bottom: 34px;
 }
 .footer-info__text {
     display: inline-block;
@@ -775,6 +793,7 @@ Mobile
         position: fixed;
         height: 100vh;
         z-index: 100;
+        color: #fff;
         background-color: rgb(0, 0, 0, 0.8);
         width: 100vw;
         height: calc(100hw + 78px);
@@ -786,7 +805,7 @@ Mobile
     }
     .topmenu__item {
         display: block;
-        padding-bottom: 10px;
+        margin-bottom: 20px;
     }
     .container {
         max-width: none;
@@ -794,7 +813,7 @@ Mobile
         padding: 0 16px;
     }
     .banner-wrapper {
-        padding: 0;
+        padding-top: 0;
         margin-top: -84px;
         background: url(img/banner-bg-mobile.png) no-repeat bottom;
         background-size: cover;
@@ -864,13 +883,12 @@ Mobile
         justify-content: center;
         text-align: center;
         gap: 65px;
-        padding-bottom: 0;
         margin: 0 auto;
     }
     .fastest {
         margin: 0 auto;
     }
-    .section-title_fastest {
+    .fastest-section__title {
         display: inline-block;
         padding: 0 26px;
         margin-bottom: 27px;
@@ -890,21 +908,21 @@ Mobile
         margin-bottom: 175px;
     }
     .newsletter-wrapper {
-        padding-left: 0;
+        margin-left: 0;
         text-align: center;
     }
     .newsletter__img {
         display: none;
     }
     .newsletter {
-        padding-left: 0;
+        margin-left: 0;
     }
     .newsletter-subtitle_top {
         text-align: center;
-        padding-top: 0;
-        padding-bottom: 17px;
+        margin-top: 0;
+        margin-bottom: 17px;
     }
-    .section-title_newsletter {
+    .newsletter-section__title {
         text-align: center;
         display: inline-block;
         padding: 0 26px;
@@ -919,11 +937,11 @@ Mobile
         margin: 0 auto 90px;
     }
     .newsletter-subtitle_center {
-        padding-left: 0;
-        padding-bottom: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
     }
     .newsletter__text {
-        padding-left: 0;
+        margin-left: 0;
         margin-bottom: 34px;
     }
     .newsletter-form {
@@ -947,39 +965,30 @@ Mobile
     }
     .partners-card-wrapper {
         gap: 30px;
+        margin-bottom: 100px;
     }
     .partners-card:nth-child(n + 4) {
         display: none;
     }
-    .partners-card-wrapper {
-        margin-bottom: 100px;
-    }
     .testimonials-section__title {
         margin-bottom: 105px;
-    }
-    .testimonials-logo {
-        padding-bottom: 53px;
     }
     .testimonials__text {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.17px;
-        padding: 0 50px;
+        padding-left: 50px;
+        padding-right: 50px;
         margin-bottom: 53px;
-    }
-    .testimonials-card {
-        margin-bottom: 95px;
-    }
-    .testimonials-card__img {
-        width: 42px;
-        height: 42px;
-        background: url(img/testimonials-card-img-mobile.png) no-repeat;
-        background-size: contain;
     }
     .testimonials-card__text {
         font-size: 13px;
-        max-width: 108px;
+        width: 161px;
+        padding-left: 53px;
+        background: url(img/testimonials-card-img-mobile.png) no-repeat;
+        background-size: 42px 42px;
+        margin: 0 auto 95px;
     }
     .pricing-section {
         padding-top: 120px;
@@ -1004,7 +1013,6 @@ Mobile
     }
     .contact-wrapper {
         flex-direction: column;
-        padding-top: 0;
         gap: 80px;
     }
     .contact-map {
@@ -1017,12 +1025,26 @@ Mobile
         gap: 25px;
         padding: 0 18px;
     }
-    .contact-info {
-        flex-direction: row;
-    }
     .contact-info__text {
         text-align: left;
-        padding-left: 20px;
+    }
+    .contact-info_poi {
+        width: auto;
+        padding-top: 0px;
+        padding-left: 46px;
+        background: url(./img/poi-blue.svg) left no-repeat;
+    }
+    .contact-info_phone {
+        width: auto;
+        padding-top: 0px;
+        padding-left: 41px;
+        background: url(./img/phone-blue.svg) left no-repeat;
+    }
+    .contact-info_letter {
+        width: auto;
+        padding-top: 0px;
+        padding-left: 47px;
+        background: url(./img/letter-blue.svg) left no-repeat;
     }
     .contact-form {
         order: 3;
@@ -1031,12 +1053,12 @@ Mobile
         margin: 0 auto;
     }
     .contact-info__icon {
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .contact-info-wrapper {
         display: flex;
         flex-direction: column;
-        padding-top: 0;
+        margin-top: 0;
     }
     .contact-social {
         order: 1;
@@ -1058,9 +1080,8 @@ Mobile
         gap: 83px;
         margin-bottom: 75px;
     }
-    .footer-info_poi,
-    .footer-info_phone {
-        margin-left: 55px;
+    .footer-info__link {
+        margin-left: 51px;
     }
     .footer-social {
         justify-content: center;
