@@ -48,13 +48,13 @@
                     </nav>
                     <img class="header__logo" src="./img/logo.svg" alt="#">
                     <div class="social">
-                        <a class="social__link" href="#">
+                        <a class="social__link icon-42" href="#">
                             <img class="social__link_img" src="./img/tw.svg" alt="#">
                         </a>
-                        <a class="social__link" href="#">
+                        <a class="social__link icon-42" href="#">
                             <img class="social__link_img" src="./img/fb.svg" alt="#">
                         </a>
-                        <a class="social__link" href="#">
+                        <a class="social__link icon-42" href="#">
                             <img class="social__link_img" src="./img/in.svg" alt="#">
                         </a>
                     </div>
@@ -115,12 +115,13 @@
     </section>
     <section id="newsletter-section" class="newsletter-section">
         <div class="container">
-            <div class="newsletter-wrapper">
+            <div class="newsletter">
                 <div class="newsletter__img"></div>
-                <div class="newsletter">
+                <div class="newsletter-inner-top">
                     <span class="newsletter-subtitle newsletter-subtitle_top">At your fingertips</span>
                     <h2 class="section-title newsletter-section__title">Lightning fast prototyping </h2>
-                    <div class="newsletter-mobile__img"></div>
+                </div>
+                <div class="newsletter-inner-bottom">
                     <span class="newsletter-subtitle newsletter-subtitle_center">Subscribe to our Newsletter</span>
                     <span class="newsletter__text">Available exclusivery on Figmaland</span>
                     <form class="newsletter-form">
@@ -136,29 +137,53 @@
             <h2 class="section-title partners-section__title">Partners</h2>
             <p class="partners__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
             <div class="partners-card-wrapper">
-                <div class="partners-card partners-card_google">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_google.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_amazon">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_amazon.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_microsoft">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_microsoft.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_uber">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_uber.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_dropbox">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_dropbox.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_google">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_google.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_uber">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_uber.png" alt="#">
+                    </div>
                 </div>
-                <div class="partners-card partners-card_amazon">
+                <div class="partners-card">
                     <p class="partners-card__text">Client Name</p>
+                    <div class="partners-cart__img-wrapper">
+                        <img class="partners-cart__img" src="./img/logo_amazon.png" alt="#">
+                    </div>
                 </div>
             </div>
             <a class="button-primary button-primary_fastest" href="#">Try For Free</a>
@@ -167,8 +192,16 @@
     <section id="testimonials-section" class="testimonials-section text_center">
         <div class="container">
             <h2 class="section-title testimonials-section__title">Testimonials</h2>
+            <figure class="testimonials__icon">
+                <img class="testimonials__logo" src="img/testimonials-logo.png" alt="#">
+            </figure>
             <p class="testimonials__text">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
-            <p class="testimonials-card__text">Organize across Ui designer</p>
+            <div class="testimonials-card">
+                <div class="testimonials-card__img-wrapper">
+                    <img class="testimonials-card__avatar" src="img/testimonials-card-img.png" alt="#">
+                </div>
+                <p class="testimonials-card__text">Organize across Ui designer</p>
+            </div>    
             <a class="button-primary button-primary_fastest" href="#">More Testimonials</a>
         </div>
     </section>
@@ -272,13 +305,13 @@
                         src="https://www.openstreetmap.org/export/embed.html?bbox=-122.44850635528566%2C37.760096010161554%2C-122.39735126495363%2C37.79327023444296&amp;layer=mapnik" style="border: 1px solid black"></iframe>                    
                     </div>
                     <div class="contact-social">
-                        <a class="contact-social__link" href="#">
+                        <a class="contact-social__link icon-42" href="#">
                             <img class="contact-social__link_img_blue" src="./img/tw-blue.svg" alt="#">
                         </a>
-                        <a class="contact-social__link" href="#">
+                        <a class="contact-social__link icon-42" href="#">
                             <img class="contact-social__link_img_blue" src="./img/fb-blue.svg" alt="#">
                         </a>
-                        <a class="contact-social__link" href="#">
+                        <a class="contact-social__link icon-42" href="#">
                             <img class="contact-social__link_img_blue" src="./img/in-blue.svg" alt="#">
                         </a>
                     </div>
@@ -359,13 +392,13 @@
                         <span class="footer-info__text">(239) 555-0108</span>
                     </a>
                     <div class="footer-social">
-                        <a class="footer-social__link" href="#">
+                        <a class="footer-social__link icon-42" href="#">
                             <img class="footer-social__link_img" src="./img/tw.svg" alt="#">
                         </a>
-                        <a class="footer-social__link" href="#">
+                        <a class="footer-social__link icon-42" href="#">
                             <img class="footer-social__link_img" src="./img/fb.svg" alt="#">
                         </a>
-                        <a class="footer-social__link" href="#">
+                        <a class="footer-social__link icon-42" href="#">
                             <img class="footer-social__link_img" src="./img/in.svg" alt="#">
                         </a>
                     </div>
