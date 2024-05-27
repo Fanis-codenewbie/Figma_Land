@@ -10,7 +10,6 @@
     font: 400 28px "Roboto", Arial, Helvetica, sans-serif;
     background-color: #fff;
 }
-
 a {
     color: inherit;
     text-decoration: none;
@@ -94,7 +93,7 @@ Topmenu
     justify-content: space-between;
     width: 100%;
     height: 78px;
-    padding-top: 17px;
+    margin-top: 17px;
 }
 .mobile-menu {
     width: 40px;
@@ -104,17 +103,39 @@ Topmenu
 /* 
 Banner 
 */
-.banner-wrapper {
-    padding-top: 49px;
-    background: url(img/banner-bg.jpg) no-repeat bottom;
+.top-bg {
+    background: url(img/banner-bg.jpg) no-repeat bottom center;
     background-size: cover;
-    margin-bottom: 126px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 927px;
+}
+.top-bg::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+	border-bottom: 27vh solid #fff;
+    border-right: 50vw solid transparent;
+}
+.top-bg::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    border-bottom: 27vh solid #fff;
+    border-left: 51vw solid transparent;
 }
 .header {
     display: flex;
     justify-content: space-between; 
     align-items: center;
     gap: 5px;
+    padding-top: 50px;
     padding-left: 100px;
     padding-right: 90px;
 }
@@ -145,7 +166,8 @@ Banner
 }
 .banner-section {
     position: relative;
-    padding-top: 160px;     
+    padding-top: 160px; 
+    margin-bottom: 368px;    
 }
 .banner {
     max-width: 750px;
@@ -167,23 +189,15 @@ Banner
 }
 .button-primary_banner {
     padding: 16px 62px;
-    margin-bottom: 243px;
+    /* margin-bottom: 243px; */
 }
 .left-triangle {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-	border-bottom: 27vh solid #fff;
-    border-right: 50vw solid transparent;
+    
 
 }
 .right-triangle {
 
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    border-bottom: 27vh solid #fff;
-    border-left: 50vw solid transparent;
+    
 }
 /* 
 Features 
@@ -864,12 +878,26 @@ Mobile
         margin: 0 auto;
         padding: 0 16px;
     }
-    .banner-wrapper {
+    /* .banner-wrapper {
         padding-top: 0;
         margin-top: -84px;
         background: url(img/banner-bg-mobile.png) no-repeat bottom;
         background-size: cover;
-        margin-bottom: 110px;
+    } */
+    .top-bg {
+        background: url(img/banner-bg-mobile.png) no-repeat bottom center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 884px;
+    }
+    .top-bg::before, 
+    .top-bg::after {
+        border-bottom: 14vh solid #fff;
     }
     .header {
         display: none;
@@ -878,7 +906,8 @@ Mobile
         margin: 0;
     }
     .banner-section {
-        padding-top: 202px;
+        padding-top: 110px;
+        margin-bottom: 110px;
     }
     .banner-section__title {
         font-weight: 400;
@@ -893,10 +922,6 @@ Mobile
     }
     .button-primary_banner {
         margin-bottom: 248px;
-    }
-    .left-triangle,
-    .right-triangle {
-        border-bottom: 15vh solid #fff;
     }
     .features-section {
         margin-bottom: 190px;
@@ -1058,6 +1083,9 @@ Mobile
         flex-direction: column;
         max-width: 335px;
         gap: 50px;
+    }
+    .pricing-card_center {
+        padding: 40px;
     }
     .contact-section {
         margin-bottom: 150px;

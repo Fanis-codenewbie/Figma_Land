@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body_styled">
+    <div class="top-bg"></div>
     <div id="mobilemenu" class="topmenu hide" onclick="document.getElementById('mobilemenu').classList.toggle('hide');">
         <a href="#" class="topmenu__item">Home</a>
         <a href="#" class="topmenu__item">Product</a>
@@ -22,57 +23,54 @@
                 <img class="mobile-menu__icon" src="./img/burger-icon.svg" alt="#">
             </button>
         </div>
-    </div>
-    <div class="banner-wrapper">
-        <header id="header-section" class="header-section">
-            <div class="container">
-                <div class="header">
-                    <nav class="nav-main">
-                        <ul class="nav-main__list">
-                            <li class="nav-main__item">
-                                <a class="nav-main__link nav-main__link_selected" href="#">Home</a>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">Product</a>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">About</a>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <img class="header__logo" src="./img/logo.svg" alt="#">
-                    <div class="social">
-                        <a class="social__link icon-42" href="#">
-                            <img class="social__link_img" src="./img/tw.svg" alt="#">
-                        </a>
-                        <a class="social__link icon-42" href="#">
-                            <img class="social__link_img" src="./img/fb.svg" alt="#">
-                        </a>
-                        <a class="social__link icon-42" href="#">
-                            <img class="social__link_img" src="./img/in.svg" alt="#">
-                        </a>
-                    </div>
+    </div>    
+    <header id="header-section" class="header-section">
+        <div class="container">
+            <div class="header">
+                <nav class="nav-main">
+                    <ul class="nav-main__list">
+                        <li class="nav-main__item">
+                            <a class="nav-main__link nav-main__link_selected" href="#">Home</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Product</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">About</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img class="header__logo" src="./img/logo.svg" alt="#">
+                <div class="social">
+                    <a class="social__link icon-42" href="#">
+                        <img class="social__link_img" src="./img/tw.svg" alt="#">
+                    </a>
+                    <a class="social__link icon-42" href="#">
+                        <img class="social__link_img" src="./img/fb.svg" alt="#">
+                    </a>
+                    <a class="social__link icon-42" href="#">
+                        <img class="social__link_img" src="./img/in.svg" alt="#">
+                    </a>
                 </div>
             </div>
-        </header>
-        <section id="banner-section" class="banner-section">
-            <div class="container">
-                <div class="banner text_center">
-                    <h1 class="section-title banner-section__title">The best products start with Figma</h1>
-                    <p class="banner__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
-                    <a class="button-primary button-primary_banner" href="#">Try For Free</a>
-                </div>
+        </div>
+    </header>
+    <section id="banner-section" class="banner-section">
+        <div class="container">
+            <div class="banner text_center">
+                <h1 class="section-title banner-section__title">The best products start with Figma</h1>
+                <p class="banner__text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                <a class="button-primary button-primary_banner" href="#">Try For Free</a>
             </div>
-            <span class="left-triangle"></span>
-            <span class="right-triangle"></span>
-        </section>
-    </div>
+        </div>
+        
+    </section>
     <section id="features-section" class="features-section text_center">
         <div class="container">
             <h2 class="section-title features-section__title">Features</h2>
